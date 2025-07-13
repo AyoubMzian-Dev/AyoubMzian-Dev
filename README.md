@@ -35,7 +35,7 @@ I build modern web apps, design in Figma, collaborate on Slack, and deploy with 
 
 ---
 
-## 📂 Featured Projects
+## 📂 Iporetent Projects
 
 ### [1337-portfolio](https://github.com/AyoubMzian-Dev/1337-portfolio)
 > Personal portfolio built with Next.js, Tailwind, and TypeScript.  
@@ -45,17 +45,6 @@ I build modern web apps, design in Figma, collaborate on Slack, and deploy with 
 > Advanced Next.js app using TypeScript.  
 > Modern UI, scalable architecture.
 
-### [SpectraMind](https://github.com/AyoubMzian-Dev/SpectraMind)
-> Web app blending philosophy & science.  
-> Built with Next.js, Node.js, Tailwind CSS, MySQL.
-
-### [nextjs-dashboard-app](https://github.com/AyoubMzian-Dev/nextjs-dashboard-app)
-> Dashboard app for managing users, customers, and invoices.  
-> Based on Next.js 14, Vercel, and official Next.js tutorials.
-
-### [Team-Portfolio](https://github.com/AyoubMzian-Dev/Team-Portfolio)
-> Collaborative portfolio for teams.  
-> Built with TypeScript and Next.js.
 
 ---
 
