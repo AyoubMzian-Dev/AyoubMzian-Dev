@@ -1,4 +1,4 @@
-"use client"
+
 import { notFound } from "next/navigation"
 import { BlogPost } from "@/components/blog-post"
 import { RelatedPosts } from "@/components/related-posts"
