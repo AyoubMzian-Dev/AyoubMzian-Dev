@@ -1,16 +1,24 @@
-import { Navigation } from "@/components/navigation"
-import { HeroSection } from "@/components/hero-section"
-import { AboutSection } from "@/components/about-section"
-import { WebEmpireSection } from "@/components/web-empire-section"
-import { ProjectsSection } from "@/components/projects-section"
-import { BlogSection } from "@/components/blog-section"
-import { ContactSection } from "@/components/contact-section"
-import { Footer } from "@/components/footer"
+// app/page.tsx
+
+
+import { Navigation } from "@/components/navigation";
+import { HeroSection } from "@/components/hero-section";
+import { AboutSection } from "@/components/about-section";
+import { WebEmpireSection } from "@/components/web-empire-section";
+import { ProjectsSection } from "@/components/projects-section";
+import { BlogSection } from "@/components/blog-section";
+import { ContactSection } from "@/components/contact-section";
+import { Footer } from "@/components/footer";
+
+
+// load the Dither canvas only on the client
+
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navigation />
+
       <HeroSection />
       <AboutSection />
       <WebEmpireSection />
@@ -19,5 +27,5 @@ export default function Home() {
       <ContactSection />
       <Footer />
     </main>
-  )
+  );
 }

@@ -44,24 +44,24 @@ export function AboutSection() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center ">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative">
+            <div className="relative ml-20">
               <Image
-                src="https://semlerjohnson.dev/assets/profile.jpg"
+                src="https://avatars.githubusercontent.com/u/167985836?v=4"
                 alt="Semler Johnson"
                 width={400}
                 height={400}
-                className="rounded-2xl shadow-2xl"
+                className="rounded-3xl shadow-3xl"
               />
-              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-4 rounded-xl">
+              {/* <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-4 rounded-xl">
                 <MapPin className="h-6 w-6" />
-              </div>
+              </div> */}
             </div>
           </motion.div>
 
