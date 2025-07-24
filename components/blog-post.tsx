@@ -92,7 +92,7 @@ export function BlogPost({ post }: BlogPostProps) {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <Image
-              src={post.author.avatar || "/placeholder.svg"}
+              src={"https://avatars.githubusercontent.com/u/167985836?v=4"}
               alt={post.author.name}
               width={48}
               height={48}
@@ -192,10 +192,10 @@ export function BlogPost({ post }: BlogPostProps) {
                 </code>
               )
             },
-            h1: ({ children }) => <h1 className="text-3xl font-bold mt-8 mb-4 text-foreground">{children}</h1>,
-            h2: ({ children }) => <h2 className="text-2xl font-semibold mt-6 mb-3 text-foreground">{children}</h2>,
-            h3: ({ children }) => <h3 className="text-xl font-semibold mt-4 mb-2 text-foreground">{children}</h3>,
-            p: ({ children }) => <p className="mb-4 leading-relaxed text-foreground">{children}</p>,
+            h1: ({ children }) => <h1 className="text-5xl font-bold mt-8 mb-4 text-foreground">{children}</h1>,
+            h2: ({ children }) => <h2 className="text-4xl font-semibold mt-12 mb-3 text-foreground">{children}</h2>,
+            h3: ({ children }) => <h3 className="text-3xl font-semibold mt-12 mb-2 text-foreground">{children}</h3>,
+            p: ({ children }) => <p className="mb-4 text-lg leading-relaxed text-foreground">{children}</p>,
             ul: ({ children }) => <ul className="list-disc list-inside mb-4 space-y-1 text-foreground">{children}</ul>,
             ol: ({ children }) => (
               <ol className="list-decimal list-inside mb-4 space-y-1 text-foreground">{children}</ol>
@@ -244,7 +244,7 @@ export function BlogPost({ post }: BlogPostProps) {
       >
         <div className="flex items-start gap-4">
           <Image
-            src={post.author.avatar || "/placeholder.svg"}
+            src={ "https://avatars.githubusercontent.com/u/167985836?v=4"}
             alt={post.author.name}
             width={64}
             height={64}

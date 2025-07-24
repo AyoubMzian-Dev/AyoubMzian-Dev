@@ -7,124 +7,14 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Calendar, Clock, Search, ArrowRight } from "lucide-react"
+import { blogPosts } from "@/lib/mockdata"
 
-const blogPosts = [
-  {
-    id: 1,
-    slug: "building-scalable-nextjs-applications",
-    title: "Building Scalable Next.js Applications with TypeScript",
-    excerpt:
-      "Learn how to structure large Next.js applications using TypeScript for better maintainability and developer experience.",
-    content: "In this comprehensive guide, we explore best practices for building scalable Next.js applications...",
-    date: "2024-01-15",
-    readTime: "8 min read",
-    category: "Next.js",
-    tags: ["Next.js", "TypeScript", "Architecture", "Performance"],
-    image: "/blog-nextjs-typescript.png",
-    featured: true,
-    author: {
-      name: "Ayoub Mzian",
-      avatar: "/ayoub-avatar.png",
-      bio: "Full-Stack Developer & Founder of Web Empire Agency",
-    },
-  },
-  {
-    id: 2,
-    slug: "modern-web-development-workflow",
-    title: "Modern Web Development Workflow with Docker and Vercel",
-    excerpt: "Discover how to streamline your development process using Docker containers and Vercel deployment.",
-    content:
-      "Modern web development requires efficient workflows. Here's how Docker and Vercel can transform your process...",
-    date: "2024-01-10",
-    readTime: "12 min read",
-    category: "DevOps",
-    tags: ["Docker", "Vercel", "Deployment", "Workflow"],
-    image: "/blog-docker-vercel.png",
-    featured: false,
-    author: {
-      name: "Ayoub Mzian",
-      avatar: "/ayoub-avatar.png",
-      bio: "Full-Stack Developer & Founder of Web Empire Agency",
-    },
-  },
-  {
-    id: 3,
-    slug: "figma-to-code-best-practices",
-    title: "From Figma to Code: Best Practices for Design Implementation",
-    excerpt:
-      "Bridge the gap between design and development with these proven techniques for implementing Figma designs.",
-    content: "Translating Figma designs into pixel-perfect code requires attention to detail and the right approach...",
-    date: "2024-01-05",
-    readTime: "6 min read",
-    category: "Design",
-    tags: ["Figma", "UI/UX", "Design Systems", "Frontend"],
-    image: "/blog-figma-code.png",
-    featured: false,
-    author: {
-      name: "Ayoub Mzian",
-      avatar: "/ayoub-avatar.png",
-      bio: "Full-Stack Developer & Founder of Web Empire Agency",
-    },
-  },
-  {
-    id: 4,
-    slug: "building-web-empire-agency",
-    title: "Building Web Empire Agency: Lessons from Starting a Dev Agency",
-    excerpt:
-      "My journey of founding Web Empire Agency and the key lessons learned while building a successful development agency.",
-    content: "Starting a development agency comes with unique challenges and opportunities. Here's what I learned...",
-    date: "2023-12-28",
-    readTime: "15 min read",
-    category: "Business",
-    tags: ["Entrepreneurship", "Agency", "Business", "Startup"],
-    image: "/blog-web-empire-journey.png",
-    featured: true,
-    author: {
-      name: "Ayoub Mzian",
-      avatar: "/ayoub-avatar.png",
-      bio: "Full-Stack Developer & Founder of Web Empire Agency",
-    },
-  },
-  {
-    id: 5,
-    slug: "react-performance-optimization",
-    title: "React Performance Optimization: Advanced Techniques",
-    excerpt:
-      "Deep dive into advanced React performance optimization techniques for building lightning-fast applications.",
-    content: "Performance is crucial for user experience. Let's explore advanced React optimization techniques...",
-    date: "2023-12-20",
-    readTime: "10 min read",
-    category: "React",
-    tags: ["React", "Performance", "Optimization", "JavaScript"],
-    image: "/blog-react-performance.png",
-    featured: false,
-    author: {
-      name: "Ayoub Mzian",
-      avatar: "/ayoub-avatar.png",
-      bio: "Full-Stack Developer & Founder of Web Empire Agency",
-    },
-  },
-  {
-    id: 6,
-    slug: "typescript-advanced-patterns",
-    title: "Advanced TypeScript Patterns for Better Code Quality",
-    excerpt: "Explore advanced TypeScript patterns and techniques to write more maintainable and type-safe code.",
-    content: "TypeScript offers powerful features beyond basic typing. Let's explore advanced patterns...",
-    date: "2023-12-15",
-    readTime: "9 min read",
-    category: "TypeScript",
-    tags: ["TypeScript", "Patterns", "Code Quality", "Best Practices"],
-    image: "/blog-typescript-patterns.png",
-    featured: false,
-    author: {
-      name: "Ayoub Mzian",
-      avatar: "/ayoub-avatar.png",
-      bio: "Full-Stack Developer & Founder of Web Empire Agency",
-    },
-  },
-]
+// Extract unique categories from blog posts
+const categories = ["All", ...Array.from(new Set(blogPosts.map((post) => post.category)))]
 
-const categories = ["All", "React", "Backend", "Frontend", "DevOps"]
+
+
+
 
 export function BlogSection() {
   const [selectedCategory, setSelectedCategory] = useState("All")
