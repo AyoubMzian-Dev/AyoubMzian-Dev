@@ -21,8 +21,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+212 773 473 782",
-    href: "tel:+212773473782",
+    value: "+212 780-360293",
+    href: "tel:+212 780-360293",
   },
   {
     icon: MapPin,
@@ -41,12 +41,12 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/ayoub-mzian",
+    href: "https://www.linkedin.com/in/ayoub-developer-711040305",
   },
   {
     icon: Twitter,
     label: "Twitter",
-    href: "https://twitter.com/ayoub_mzian_dev",
+    href: "https://x.com/Ayoub_Mzian",
   },
 ]
 
