@@ -6,22 +6,22 @@ import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react"
 const socialLinks = [
   {
     icon: Github,
-    href: "https://github.com/semlerjohnson",
+    href: "https://github.com/AyoubMzian-Dev",
     label: "GitHub",
   },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/in/semlerjohnson",
+    href: "https://www.linkedin.com/in/ayoub-developer-711040305",
     label: "LinkedIn",
   },
   {
     icon: Twitter,
-    href: "https://twitter.com/semler_dev",
+    href: "https://x.com/Ayoub_Mzian",
     label: "Twitter",
   },
   {
     icon: Mail,
-    href: "mailto:semler.johnson@example.com",
+    href: "ayoubmziandeveloper@gmail.com",
     label: "Email",
   },
 ]
@@ -119,7 +119,7 @@ export function Footer() {
               </p>
               <p>
                 <a href="tel:+212773473782" className="hover:text-primary transition-colors">
-                  +212 773 473 782
+                  +212 780-360293
                 </a>
               </p>
             </div>
